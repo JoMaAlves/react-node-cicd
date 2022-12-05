@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <h1>My FrontEnd</h1>
-      <h3>My name is ${username}!</h3>
+      <h3>My name is Jomassauro!</h3>
     </div>
   );
 }
