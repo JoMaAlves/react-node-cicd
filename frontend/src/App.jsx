@@ -12,14 +12,18 @@ function App() {
     setUsername(response.data);
   };
 
-  useEffect(() => {
-    getNames();
-  }, []);
-
   return (
     <div className="App">
-      <h1>My FrontEnd</h1>
-      <h3>My name is Jomassauro!</h3>
+      <h1>My Little CI/CD Site</h1>
+
+      <input
+        value={username}
+        onChange={({ target }) => setUsername(target.value)}
+      />
+
+      <h3>
+        My name is <span className="User">{username}</span>!
+      </h3>
     </div>
   );
 }
