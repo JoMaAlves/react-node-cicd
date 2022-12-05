@@ -14,12 +14,18 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Little CI/CD Site</h1>
+      <h1 className="mb-5">My Little CI/CD Site</h1>
 
-      <input
-        value={username}
-        onChange={({ target }) => setUsername(target.value)}
-      />
+      <div class="mb-5">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter your name"
+          value={username}
+          onChange={({ target }) => setUsername(target.value)}
+        />
+      </div>
 
       <h3>
         My name is{" "}
