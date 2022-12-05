@@ -6,7 +6,8 @@ app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 app.get("/names", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.send("Telmo");
+  res.header("Access-Control-Allow-Private-Network", "true");
+  res.send("Jomassauro");
 });
 
 app.listen(5000, () => {
