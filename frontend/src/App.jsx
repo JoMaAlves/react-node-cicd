@@ -22,7 +22,7 @@ function App() {
       </div>
 
       <h3>
-        My name is{" "}
+        Hello! My name is{" "}
         <span className="User">{username ? username + "!" : "..."}</span>
       </h3>
 
